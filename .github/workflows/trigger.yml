@@ -20,8 +20,8 @@ jobs:
         run: |
           jq '{
             action: .action,
-            label: .label.name,
-            pr_number: .number,
+            label: "lol",
+            pr_number: 69,
           }' "$GITHUB_EVENT_PATH" > /tmp/backport_data.json
 
       # The backport action needs access to the 'labelled' event payload, so the event payload is saved
